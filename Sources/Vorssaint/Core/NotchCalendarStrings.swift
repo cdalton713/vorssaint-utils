@@ -43,6 +43,8 @@ struct NotchCalendarStrings {
     let calendars: String
     /// Opens the event's Zoom, Google Meet or Teams call.
     let join: String
+    /// The app an event or the calendar opens in.
+    let openWith: String
 }
 
 extension FeatureStrings {
@@ -80,7 +82,8 @@ extension FeatureStrings {
             weekNumbers: "Week numbers",
             weekNumber: "Week %d",
             calendars: "Calendars shown",
-            join: "Join")
+            join: "Join",
+            openWith: "Open events in")
         case .ptBR: return NotchCalendarStrings(
             title: "Calendário",
             description: "Veja o mês e seus próximos compromissos no Dynamic Island.",
@@ -113,7 +116,8 @@ extension FeatureStrings {
             weekNumbers: "Números das semanas",
             weekNumber: "Semana %d",
             calendars: "Calendários exibidos",
-            join: "Entrar")
+            join: "Entrar",
+            openWith: "Abrir eventos no")
         case .es: return NotchCalendarStrings(
             title: "Calendario",
             description: "Consulta el mes y tus próximas citas en el Dynamic Island.",
@@ -146,7 +150,8 @@ extension FeatureStrings {
             weekNumbers: "Números de semana",
             weekNumber: "Semana %d",
             calendars: "Calendarios mostrados",
-            join: "Unirse")
+            join: "Unirse",
+            openWith: "Abrir eventos en")
         case .sk: return NotchCalendarStrings(
             title: "Kalendár",
             description: "Prezerajte mesiac a nadchádzajúce stretnutia v Dynamic Island.",
@@ -179,7 +184,8 @@ extension FeatureStrings {
             weekNumbers: "Čísla týždňov",
             weekNumber: "%d. týždeň",
             calendars: "Zobrazené kalendáre",
-            join: "Pripojiť sa")
+            join: "Pripojiť sa",
+            openWith: "Otvárať udalosti v")
         case .de: return NotchCalendarStrings(
             title: "Kalender",
             description: "Den Monat und deine nächsten Termine im Dynamic Island ansehen.",
@@ -212,7 +218,8 @@ extension FeatureStrings {
             weekNumbers: "Kalenderwochen",
             weekNumber: "Kalenderwoche %d",
             calendars: "Angezeigte Kalender",
-            join: "Beitreten")
+            join: "Beitreten",
+            openWith: "Termine öffnen in")
         case .fr: return NotchCalendarStrings(
             title: "Calendrier",
             description: "Consultez le mois et vos prochains rendez-vous dans le Dynamic Island.",
@@ -245,7 +252,8 @@ extension FeatureStrings {
             weekNumbers: "Numéros de semaine",
             weekNumber: "Semaine %d",
             calendars: "Calendriers affichés",
-            join: "Rejoindre")
+            join: "Rejoindre",
+            openWith: "Ouvrir les événements dans")
         case .it: return NotchCalendarStrings(
             title: "Calendario",
             description: "Consulta il mese e i prossimi appuntamenti nel Dynamic Island.",
@@ -278,7 +286,8 @@ extension FeatureStrings {
             weekNumbers: "Numeri delle settimane",
             weekNumber: "Settimana %d",
             calendars: "Calendari mostrati",
-            join: "Partecipa")
+            join: "Partecipa",
+            openWith: "Apri eventi in")
         case .ru: return NotchCalendarStrings(
             title: "Календарь",
             description: "Просматривайте месяц и ближайшие встречи в вырезе экрана.",
@@ -311,7 +320,8 @@ extension FeatureStrings {
             weekNumbers: "Номера недель",
             weekNumber: "Неделя %d",
             calendars: "Показываемые календари",
-            join: "Подключиться")
+            join: "Подключиться",
+            openWith: "Открывать события в")
         case .tr: return NotchCalendarStrings(
             title: "Takvim",
             description: "Ayı ve yaklaşan randevularınızı çentikte görüntüleyin.",
@@ -344,7 +354,8 @@ extension FeatureStrings {
             weekNumbers: "Hafta numaraları",
             weekNumber: "%d. hafta",
             calendars: "Gösterilen takvimler",
-            join: "Katıl")
+            join: "Katıl",
+            openWith: "Etkinlikleri şurada aç")
         case .ja: return NotchCalendarStrings(
             title: "カレンダー",
             description: "Dynamic Islandで月のカレンダーと今後の予定を確認できます。",
@@ -377,7 +388,8 @@ extension FeatureStrings {
             weekNumbers: "週番号",
             weekNumber: "第%d週",
             calendars: "表示するカレンダー",
-            join: "参加")
+            join: "参加",
+            openWith: "イベントを開くApp")
         case .ko: return NotchCalendarStrings(
             title: "캘린더",
             description: "Dynamic Island에서 월별 달력과 다가오는 일정을 확인하세요.",
@@ -410,7 +422,8 @@ extension FeatureStrings {
             weekNumbers: "주 번호",
             weekNumber: "%d주차",
             calendars: "표시할 캘린더",
-            join: "참가")
+            join: "참가",
+            openWith: "이벤트를 열 앱")
         case .zhHans: return NotchCalendarStrings(
             title: "日历",
             description: "在Dynamic Island中浏览月历和即将开始的日程。",
@@ -443,7 +456,8 @@ extension FeatureStrings {
             weekNumbers: "周数",
             weekNumber: "第%d周",
             calendars: "显示的日历",
-            join: "加入")
+            join: "加入",
+            openWith: "打开事件的 App")
         case .zhTW: return NotchCalendarStrings(
             title: "行事曆",
             description: "在Dynamic Island中瀏覽月曆與即將到來的行程。",
@@ -476,7 +490,8 @@ extension FeatureStrings {
             weekNumbers: "週數",
             weekNumber: "第%d週",
             calendars: "顯示的行事曆",
-            join: "加入")
+            join: "加入",
+            openWith: "用以打開活動的 App")
         case .zhHK: return NotchCalendarStrings(
             title: "日曆",
             description: "在Dynamic Island中瀏覽月曆及即將到來的行程。",
@@ -509,7 +524,8 @@ extension FeatureStrings {
             weekNumbers: "週數",
             weekNumber: "第%d週",
             calendars: "顯示的日曆",
-            join: "加入")
+            join: "加入",
+            openWith: "用以打開活動的 App")
         case .uk: return NotchCalendarStrings(
             title: "Календар",
             description: "Переглядайте місяць та майбутні події у Dynamic Island.",
@@ -542,7 +558,8 @@ extension FeatureStrings {
             weekNumbers: "Номери тижнів",
             weekNumber: "Тиждень %d",
             calendars: "Календарі для показу",
-            join: "Приєднатися")
+            join: "Приєднатися",
+            openWith: "Відкривати події в")
         }
     }
 }
